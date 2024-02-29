@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import style from "./Home.module.scss";
 import { useToDoStore } from "../data/stores/useToDoStore";
 import { InputPlus } from "../components/InputPlus";

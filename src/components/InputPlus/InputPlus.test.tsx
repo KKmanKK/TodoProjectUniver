@@ -1,9 +1,8 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, test, expect, vi, vitest } from "vitest";
-import { useToDoStore } from "../../data/stores/useToDoStore";
 
 import { InputPlus } from ".";
-const onAdd = vi.fn((title: string) => {});
+const onAdd = vi.fn((_title: string) => {});
 
 vitest.mock("../../data/stores/useToDoStore");
 

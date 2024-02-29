@@ -1,10 +1,9 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, test, expect, vi } from "vitest";
 import { TasksItem } from ".";
-import { ToDoStore, useToDoStore } from "../../data/stores/useToDoStore";
 
-const onEdited = vi.fn((id: string, title: string) => {});
-const onRemove = vi.fn((id: string) => {});
+const onEdited = vi.fn((_id: string, _title: string) => {});
+const onRemove = vi.fn((_id: string) => {});
 const data = {
   id: "1",
   title: "asd",
