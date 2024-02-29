@@ -11,4 +11,5 @@ export default defineConfig({
     environment: "happy-dom",
     setupFiles: "./src/setupTests.ts",
   },
+  base: "/TodoProjectUniver/",
 });
