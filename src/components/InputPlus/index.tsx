@@ -1,14 +1,14 @@
-import React, { useCallback, useState } from 'react';
+import React, { useState } from 'react';
 import style from './index.module.scss';
 interface InputPlusProps {
   onAdd: (title: string) => void;
 }
 export const InputPlus: React.FC<InputPlusProps> = ({ onAdd }) => {
   const [value, setValue] = useState('');
-  const addTask = useCallback(() => {
+  const addTask = () => {
     onAdd(value);
     setValue('');
-  }, [value]);
+  };
   return (
     <div className={style.wrapper}>
       <input
