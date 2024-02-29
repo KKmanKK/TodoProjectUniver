@@ -18,3 +18,5 @@ jobs:
         run: npm run build
       - name: unit test
         run: npm run test
+      - name: code style
+        run: npm run lint

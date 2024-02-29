@@ -1,7 +1,7 @@
-import React from "react";
-import { Task, useToDoStore } from "../../data/stores/useToDoStore";
-import { TasksItem } from "../TasksItem";
-import style from "./index.module.scss";
+import React from 'react';
+import { Task, useToDoStore } from '../../data/stores/useToDoStore';
+import { TasksItem } from '../TasksItem';
+import style from './index.module.scss';
 interface TasksListProps {
   tasks: Task[];
 }
@@ -15,7 +15,7 @@ export const TasksList: React.FC<TasksListProps> = ({ tasks }) => {
     removeTask(id);
   };
   if (!tasks.length) {
-    return <p style={{ textAlign: "center", marginTop: "20px" }}>Нету задач</p>;
+    return <p style={{ textAlign: 'center', marginTop: '20px' }}>Нету задач</p>;
   }
   return (
     <ul className={style.wrapper}>

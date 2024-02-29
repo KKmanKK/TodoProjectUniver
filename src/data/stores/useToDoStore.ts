@@ -1,4 +1,4 @@
-import { StateCreator, create } from "zustand";
+import { StateCreator, create } from 'zustand';
 
 export interface Task {
   id: string;

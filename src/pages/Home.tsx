@@ -1,8 +1,8 @@
-import React from "react";
-import style from "./Home.module.scss";
-import { useToDoStore } from "../data/stores/useToDoStore";
-import { InputPlus } from "../components/InputPlus";
-import { TasksList } from "../components/TasksList";
+import React from 'react';
+import style from './Home.module.scss';
+import { useToDoStore } from '../data/stores/useToDoStore';
+import { InputPlus } from '../components/InputPlus';
+import { TasksList } from '../components/TasksList';
 export const Home: React.FC = () => {
   const { createTask, tasks } = useToDoStore();
   return (

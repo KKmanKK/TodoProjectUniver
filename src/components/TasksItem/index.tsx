@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import style from "./index.module.scss";
+import React, { useEffect, useRef, useState } from 'react';
+import style from './index.module.scss';
 interface TasksItemProps {
   id: string;
   title: string;
@@ -40,7 +40,7 @@ export const TasksItem: React.FC<TasksItemProps> = ({
             ref={ref}
             onChange={(e) => setValueEdit(e.target.value)}
             onKeyDown={(e) => {
-              if (e.key === "Enter") {
+              if (e.key === 'Enter') {
                 onEdited(id, valueEdit);
                 setIsEditMode((prev) => !prev);
               }
@@ -69,7 +69,7 @@ export const TasksItem: React.FC<TasksItemProps> = ({
       <button
         className={style.btnRemove}
         onClick={() => {
-          if (confirm("Вы уверены?")) {
+          if (confirm('Вы уверены?')) {
             onRemove(id);
           }
         }}
