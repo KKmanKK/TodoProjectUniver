@@ -1,0 +1,47 @@
+.task{
+    display: grid;
+    grid-template-columns: 1fr 50px 50px;
+    background: #DBE2EF;
+    border-radius: 5px;
+    padding: 10px;
+}
+label{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px;
+}
+.checked{
+    width: 20px;
+    height: 20px;
+}
+.title{
+    padding: 5px;
+    line-height: 1.2;
+}
+.taskTitleEdit{
+    border: none;
+    font: 1rem/1em 'Roboto',sans-serif;
+    padding: 5px;
+    background: none;
+    box-shadow: 0 4px 0 -3px #3F72AF;
+}
+.btnEdit ,.btnRemove ,.btnSave{
+    display: block;
+    border: none;
+    background: none   ;
+    cursor: pointer;
+    padding: 0;
+    
+}
+.btnEdit{
+    background: url(./img/edit.svg) no-repeat center center;
+}
+.btnRemove{
+    background: url(./img/trash.svg) no-repeat center center;
+
+}
+.btnSave{
+    background: url(./img/check.svg) no-repeat center center;
+
+}
